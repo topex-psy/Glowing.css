@@ -1,0 +1,54 @@
+/*!
+ * Glowing.css - a simple pure CSS to make PNG or anything glow!
+ * https://github.com/topex-psy/Glowing.css
+ *
+ * Version: 1.0
+ * Author: Taufik Nur Rahmanda (https://www.facebook.com/TopEx.Divine)
+ * Github: https://github.com/topex-psy
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+.glowing {
+	-webkit-filter: drop-shadow(0 0 0 rgba(255,255,255,.8));
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.glowing.red:hover { -webkit-filter: drop-shadow(0 0 8px rgba(255,153,153,1)); }
+.glowing.orange:hover { -webkit-filter: drop-shadow(0 0 8px rgba(244,173,66,1)); }
+.glowing.yellow:hover { -webkit-filter: drop-shadow(0 0 8px rgba(244,241,66,1)); }
+.glowing.green:hover { -webkit-filter: drop-shadow(0 0 8px rgba(83,244,66,1)); }
+.glowing.cyan:hover { -webkit-filter: drop-shadow(0 0 8px rgba(0,255,221,1)); }
+.glowing.lightblue:hover { -webkit-filter: drop-shadow(0 0 8px rgba(0,231,255,1)); }
+.glowing.blue:hover { -webkit-filter: drop-shadow(0 0 8px rgba(0,153,255,1)); }
+.glowing.darkblue:hover { -webkit-filter: drop-shadow(0 0 8px rgba(0,63,255,1)); }
+.glowing.indigo:hover { -webkit-filter: drop-shadow(0 0 8px rgba(167,66,244,1)); }
+.glowing.purple:hover { -webkit-filter: drop-shadow(0 0 8px rgba(244,66,232,1)); }
+.glowing.magenta:hover { -webkit-filter: drop-shadow(0 0 8px rgba(255,109,194,1)); }
+.glowing.pink:hover { -webkit-filter: drop-shadow(0 0 8px rgba(255,137,184,1)); }
+
+.and { }
+.quickly { -webkit-transition:-webkit-transform .05s !important;-moz-transition:-moz-transform .05s !important;-o-transition:-o-transform .05s !important;transition:transform .05s !important; }
+.rotating:hover { -ms-transform:matrix(1.1,0.2,-0.2,1.1,0,0);-webkit-transform:matrix(1.1,0.2,-0.2,1.1,0,0);transform:matrix(1.1,0.2,-0.2,1.1,0,0); }
+.zooming:hover { -ms-transform: scale(1.1,1.1);-webkit-transform: scale(1.1,1.1);transform: scale(1.1,1.1); }
+
+.disco:hover {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: disco;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-name: disco;
+}
+@-webkit-keyframes disco {
+	0%    { -webkit-filter: drop-shadow(0 0 8px rgba(255,153,153,1)); }
+	25%  { -webkit-filter: drop-shadow(0 0 8px rgba(244,241,66,1)); }
+	50%  { -webkit-filter: drop-shadow(0 0 8px rgba(0,153,255,1)); }
+	75%  { -webkit-filter: drop-shadow(0 0 8px rgba(244,66,232,1)); }
+	100%    { -webkit-filter: drop-shadow(0 0 8px rgba(255,153,153,1)); }
+}

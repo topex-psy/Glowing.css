@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Glowing.css - a simple pure CSS to make PNG or anything glow!">
+    <meta name="author" content="Taufik Nur Rahmanda">
+	<meta property="og:title" content="Glowing.css Demo">
+	<meta property="og:description" content="Glowing.css - a simple pure CSS to make PNG or anything glow!">
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="Glowing.css Demo"/>
+    <title>Glowing.css Demo</title>
+    <link rel="stylesheet" href="glowing.css"/>
+    <script src="js/jquery.js"></script>
+	<style>
+	body { font: 12px "segoe ui",arial,helvetica,sans-serif;overflow-x:hidden;overflow-y:auto; }
+	body > div > div { width:500px;text-align:center;margin:20px;padding:20px; }
+	h1 { font-size:50px;font-weight:normal; }
+	h5 { font-size:20px;font-weight:normal;margin:0 0 20px 0;color:#999; }
+	</style>
+</head>
+<body>
+	<div align="center" style="margin-top:10vh">
+	<h1>Glowing.css</h1>
+	<h5>a simple pure CSS to make PNG or anything glow!</h5>
+	<div style="box-shadow:inset 0 0 6px #ccc">
+		<a href="https://www.facebook.com/TopEx.Divine" target="_blank" title="My Facebook"><img src="img/facebook.png" class="glowing darkblue"/></a>
+		<a href="https://twitter.com/topex_psy" target="_blank" title="My Twitter"><img src="img/twitter.png" class="glowing cyan and zooming"/></a>
+		<a href="https://www.youtube.com/c/TopExSharingan" target="_blank" title="My YouTube"><img src="img/youtube.png" class="glowing red and quickly rotating"/></a>
+		<a href="#" target="_blank" title="My RSS Feed"><img src="img/rss.png" class="glowing orange and rotating"/></a>
+		<!-- Broken Social icons by http://www.psdeluxe.com/ (Free for commercial use) -->
+	</div>
+	<div class="glowing disco" style="box-shadow:inset 0 0 6px #ccc;text-align:left" onclick="$('textarea').html('class=&quot;'+$(this).attr('class')+'&quot;')">
+	<textarea style="width:100%;resize:none;margin-bottom:6px" rows="1" onclick="event.stopPropagation();">Click the image above or below :)</textarea>
+	<em><strong>Available color classes:</strong> red, orange, yellow, green, cyan, lightblue, blue, darkblue, indigo, purple, magenta, pink</em>
+	</div>
+	<div class="glowing magenta and quickly zooming">
+		<span title="Try blocking the text :D">&copy;2017 - Taufik Nur Rahmanda. Created with <img src="img/heart.png" style="margin:0 0 -10px 0"/></span>
+	</div>
+	</div>
+	<script>
+	$('a').on('click',function(e) {
+		e.preventDefault();
+		$('textarea').html('class="'+$(this).find('img').attr('class')+'"');
+	});
+	$('span').on('click',function(e) {
+		e.preventDefault();
+		$('textarea').html('class="'+$(this).parent().attr('class')+'"');
+	});
+	</script>
+</body>
+</html>
