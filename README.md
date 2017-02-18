@@ -1,7 +1,7 @@
 # Glowing.css
 a simple pure CSS to make PNG or anything glow! It can be applied to divs, texts, links, inputs, buttons, PNG image, and so on. You can use it and/or modify it freely according to your need.
 
-It's originally created for my PokoPoko fun social media porject. But then I considering to share it with anyone. XD
+It's originally created for my PokoPoko fun social media project. But then I considering to share it with anyone. XD
 
 ### [Demo! >w<](https://topex-psy.github.io/Glowing.css/)
 
@@ -36,7 +36,7 @@ Glowing.css have some more secret classes:
 ### You can try it yourself: ^_^
 
 ```html
-<div class="glowing magenta and quickly zooming">
+<div class="glowing disco and quickly zooming">
 <img src="img/yourlogo.png"/> Your name here
 </div>
 ```
