@@ -21,7 +21,9 @@ There are many other color options available: `red`, `orange`, `yellow`, `green`
 
 #### So this is how your element tag will look like:
 
-`<img src="img/facebook.png" class="glowing darkblue"/>`
+```html
+<img src="img/facebook.png" class="glowing darkblue"/>`
+```
 
 ## Want more that that?
 
