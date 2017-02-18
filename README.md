@@ -3,7 +3,7 @@ a simple pure CSS to make PNG or anything glow! It can be applied to divs, texts
 
 It's originally created for my PokoPoko fun social media porject. But then I considering to share it with anyone. XD
 
-### [Demo! >w<](https://www.facebook.com/TopEx.Divine)
+### [Demo! >w<](https://topex-psy.github.io/Glowing.css/)
 
 ## How To Use
 
